@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    font-size: 20px;
+    font-family: 'PT Sans', 'Arial' sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+header{
+    height: 100vh;
+    background-color: #3596B5;
+}
+
+nav{
+    display: flex;
+    background-color: #FFFAFA;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    margin-bottom: 0;
+}
+
+.nav-list li:nth-child(3){
+    margin-right: 30px;
+}
+
+/* .navbar-container{
+    display: flex;
+} */
+
+.nav-logo{
+    position: absolute;
+    height: 100px;
+    top: -12px;
+}
+
+
+
+nav a:link, nav a:visited{
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding-left: 25px;
+}
+
+
+
+.hero{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-box{
+    margin-top: 3.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-box-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 60vh;
+    width: 85%;
+}
+
+.header-buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.btn-empty:link, .btn-empty:visited {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #EC4E20;
+    color: #fff;
+    margin-right: 50px;
+}
+
+.btn-empty{
+    background-color: inherit;
+    transition: background-color 0.2s;
+}
+
+.btn-empty:hover{
+    background-color: #EC4E20;
+}
+
+.nav-list li:last-child a:link,.nav-list li:last-child a:visited {
+    padding-left: 0;
+    background-color: #EC4E20;
+    color: #fff;
+    padding: 12px;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+
+}
+
+.nav-list li:last-child a:hover,.nav-list li:last-child a:active {
+  background-color: #d63506;
+}
+
+
+/*******************************
+    Reusable Styles
+********************************/
+section{
+    padding: 70px;
+}
+
+
+/* Headings */
+h1{
+    font-size: 3.25rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+}
+
+p.hero-subtext{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h2:before{
+    display: inline-block;
+    margin: 0 20px 8px 0;
+    height: 3px;
+    content: " ";
+    text-shadow: none;
+    background-color: #EC4E20;
+    width: 140px;
+}
+
+h2:after {
+    display: inline-block;
+    margin: 0 0 8px 20px;
+    height: 3px;
+    content: " ";
+    text-shadow: none;
+    background-color: #EC4E20;
+    width: 140px;
+}
+
+h3{
+    font-size: 1.25rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+h4{
+    text-align: center;
+}
+
+/* icon styles */
+.icon-big{
+    font-size: 60px;
+}
+
+/********************************
+    Features Section
+*********************************/
+.feature-box{
+    text-align: center;
+}
+
+.section-about .row:first-child{
+    margin-bottom: 30px;
+}
+
+
+
+
+/**********************************
+    Section Signup
+**********************************/
+#sign-up{
+    background-color: #F5F5F5;
+}
+.card-header{
+    border-bottom: 1px solid black;
+}
+
+
+
+/************************************
+    Contact Section
+*************************************/
+.form-row{
+    border: 1px solid red;
+    display: flex;
+    justify-content: flex-end;
+}
+
+ input[type=text]{
+    width: 75%;
+}
+
+
+.social-list{
+    list-style: none;
+    display: flex;
+}
+
+.social-icon{
+    margin-right: 40px;
+    font-size: 40px;
+}
+
+h4{
+    text-transform: uppercase;
+    color: #f0f0f0;
+}
+
+.contact-card{
+    background-color: #235F83;
+    color: #f0f0f0;
+    font-size: 1rem;
+}
+
+.contact-card h5{
+    text-align: center;
+    margin: 20px 0 30px 0;
+}
+
+
+.socials .col-md-4{
+    text-align: right;
+}
+
+.contact-box, .contact-form{
+    padding: 40px 0 25px 0;;
+}
+
+.contact-box .row{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+input[type=text]{
+    width: 100%;
+}
+
+.contact-form{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.contact-form .row{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-form button{
+    width: 50%;
+    border: 1px solid red;
+    float: right;
+    color: white;
+    margin-top: 18px;
+    font-size: 1.1rem;
+}
+
+
