@@ -16,11 +16,11 @@
 </head>
 
 <body>
-    <header>
+    <header class="js--section-header">
         <nav class="navbar">
             <div class="container">
                 <a href="">
-                    <img class="nav-logo" src="resources/img/logo.png" alt="Brand Logo">
+                    <img class="nav-logo" src="resources/img/logo_white.png" alt="Brand Logo">
                 </a>
                 <ul class="nav-list">
                     <li>
@@ -38,7 +38,7 @@
                 </ul>
             </div>
         </nav>
-        <div class="container">
+        <div class="container-fluid bg">
             <div class="row hero-row">
                 <div class="col-md-12 hero-box">
                     <div class="hero-box-text">
@@ -55,7 +55,7 @@
             </div>
         </div>
     </header>
-    <section id="about" class="section-about">
+    <section id="about" class="section-about js-section-about">
         <div class="container">
             <h2>Features</h2>
         </div>
@@ -99,7 +99,7 @@
             </div>
         </div>
     </section>
-    <section id="sign-up" class="section-sign">
+    <section id="sign-up" class="section-sign js-section-signup">
         <div class="container">
             <h2>Sign Up</h2>
         </div>
@@ -107,49 +107,79 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
-                        <div class="card-header">
+                        <div class="card-header premium">
                             <h4>Premium</h4>
-                            <p class="price">$40 per Month</p>
                         </div>
                         <div class="card-body">
-                            <ul>
-                                <li>Unlimited Employees</li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                            <div class="price-container">
+                                <p>
+                                    <span class="price">$40</span>/Month</p>
+                            </div>
+                            <ul class="signup-list">
+                                <li>
+                                    <i class="fa fa-check"></i> Unlimited Employees</li>
+                                <li>
+                                    <i class="fa fa-check"></i> lorem</li>
+                                <li>
+                                    <i class="fa fa-check"></i> lorem</li>
+                                <li>
+                                    <i class="fa fa-check"></i> lorem</li>
                             </ul>
+                            <div class="card-button">
+                                <button>Purchase</button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <div class="card-header">
+                        <div class="card-header premium">
                             <h4>Pro</h4>
-                            <p class="price">$25 per Month</p>
                         </div>
                         <div class="card-body">
-                            <ul>
-                                <li>Up to 50 Employees</li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                            <div class="price-container">
+                                <p>
+                                    <span class="price">$20</span>/Month</p>
+                            </div>
+                            <ul class="signup-list">
+                                <li>
+                                    <i class="fa fa-check"></i> Unlimited Employees</li>
+                                <li>
+                                    <i class="fa fa-check"></i> lorem</li>
+                                <li>
+                                    <i class="fa fa-check"></i> lorem</li>
+                                <li>
+                                    <i class="fa fa-check"></i> lorem</li>
                             </ul>
+                            <div class="card-button">
+                                <button>Purchase</button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <div class="card-header">
-                            <h4>Free</h4>
-                            <p class="price">$0 per month</p>
+                        <div class="card-header premium">
+                            <h4>Basic</h4>
                         </div>
                         <div class="card-body">
-                            <ul>
-                                <li>Up to 25 Employees</li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                            <div class="price-container">
+                                <p>
+                                    <span class="price">$0</span>/Month</p>
+                            </div>
+                            <ul class="signup-list">
+                                <li>
+                                    <i class="fa fa-check"></i> Unlimited Employees</li>
+                                <li>
+                                    <i class="fa fa-check"></i> lorem</li>
+                                <li>
+                                    <i class="fa fa-check"></i> lorem</li>
+                                <li>
+                                    <i class="fa fa-check"></i> lorem</li>
                             </ul>
+                            <div class="card-button">
+                                <button>Purchase</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -181,7 +211,7 @@
                                                 <i class="fa fa-phone-square social-icon"></i>
                                             </div>
                                             <div class="col-md-10">
-                                                209-123-456
+                                                209-123-3456
                                             </div>
                                         </div>
                                         <div class="row">
@@ -254,6 +284,8 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
+    <script src="resources/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/app.js"></script>
 </body>
 
 </html>

@@ -10,6 +10,8 @@ body,html{
     text-rendering: optimizeLegibility;
 }
 
+button:focus {outline:0;}
+
 header{
     height: 100vh;
     background-color: #3596B5;
@@ -17,7 +19,7 @@ header{
 
 nav{
     display: flex;
-    background-color: #FFFAFA;
+    /* background-color: #FFFAFA; */
 }
 
 .nav-list{
@@ -34,27 +36,36 @@ nav{
     margin-right: 30px;
 }
 
-/* .navbar-container{
-    display: flex;
-} */
 
 .nav-logo{
     position: absolute;
-    height: 100px;
-    top: -12px;
+    height: 115px;
+    top: -10px;
+}
+
+.nav-list{
+    margin-top: 15px;
+}
+
+.nav-list li{
+    padding-left: 25px;
 }
 
 
 
 nav a:link, nav a:visited{
     text-decoration: none;
-    color: #000;
+    color: #fff;
     font-size: 1rem;
     text-transform: uppercase;
-    padding-left: 25px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.2s;
 }
 
-
+nav a:hover, nav a:active{
+    border-bottom: 2px solid #EC4E20;
+}
 
 .hero{
     height: 80%;
@@ -145,27 +156,7 @@ h2{
     font-size: 2.25rem;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 25px;
-}
-
-h2:before{
-    display: inline-block;
-    margin: 0 20px 8px 0;
-    height: 3px;
-    content: " ";
-    text-shadow: none;
-    background-color: #EC4E20;
-    width: 140px;
-}
-
-h2:after {
-    display: inline-block;
-    margin: 0 0 8px 20px;
-    height: 3px;
-    content: " ";
-    text-shadow: none;
-    background-color: #EC4E20;
-    width: 140px;
+    margin-bottom: 40px;
 }
 
 h3{
@@ -194,20 +185,61 @@ h4{
     margin-bottom: 30px;
 }
 
-
-
-
 /**********************************
     Section Signup
 **********************************/
 #sign-up{
-    background-color: #F5F5F5;
+    background-color: #EFF1F3;
 }
+
+#sign-up h4{
+    color: #fff;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .card-header{
-    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: none;
 }
 
+.premium{
+    background-color: #235F83;
+}
 
+.price-container{
+    text-align: center;
+    color: #EC4E20;
+}
+
+.price{
+    font-size: 2.75rem;
+}
+
+.signup-list{
+   list-style: none; 
+}
+
+.signup-list i{
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.card-button{
+    display: flex;
+    justify-content: center;
+}
+.card-button button{
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: #EC4E20;
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+}
 
 /************************************
     Contact Section
@@ -231,11 +263,6 @@ h4{
 .social-icon{
     margin-right: 40px;
     font-size: 40px;
-}
-
-h4{
-    text-transform: uppercase;
-    color: #f0f0f0;
 }
 
 .contact-card{
