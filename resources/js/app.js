@@ -15,9 +15,21 @@
 
 
 
-$('.js-section-about').waypoint(function(direction){
-    console.log(direction);
-    console.log('Hello');
-},{
-    offset: '25%'
+// $('.js-section-about').waypoint(function(direction){
+//     console.log(direction);
+//     console.log('Hello');
+// },{
+//     offset: '25%'
+// });
+
+
+
+$("a[href^='#']").click(function(e) {
+	e.preventDefault();
+	
+	var position = $($(this).attr("href")).offset().top -30;
+
+	$("body, html").animate({
+		scrollTop: position
+	}, {duration: 900} );
 });

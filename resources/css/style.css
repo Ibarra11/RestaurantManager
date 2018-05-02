@@ -8,18 +8,23 @@ body,html{
     font-size: 20px;
     font-family: 'PT Sans', 'Arial' sans-serif;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 button:focus {outline:0;}
 
 header{
     height: 100vh;
-    background-color: #3596B5;
+    background-color: #235F83;
 }
 
 nav{
     display: flex;
-    /* background-color: #FFFAFA; */
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.navbar{
+    padding-bottom: 15px;
 }
 
 .nav-list{
@@ -51,8 +56,6 @@ nav{
     padding-left: 25px;
 }
 
-
-
 nav a:link, nav a:visited{
     text-decoration: none;
     color: #fff;
@@ -65,13 +68,6 @@ nav a:link, nav a:visited{
 
 nav a:hover, nav a:active{
     border-bottom: 2px solid #EC4E20;
-}
-
-.hero{
-    height: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .hero-box{
@@ -87,7 +83,6 @@ nav a:hover, nav a:active{
     justify-content: center;
     color: #FFFFFF;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.4);
     height: 60vh;
     width: 85%;
 }
@@ -153,10 +148,18 @@ p.hero-subtext{
 }
 
 h2{
-    font-size: 2.25rem;
+    font-size: 2rem;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 40px;
+}
+
+h2:after{
+    border-bottom: 4px solid #EC4E20;
+    display: block;
+    content: "";
+    width: 200px;
+    margin: 20px auto;
 }
 
 h3{
@@ -179,6 +182,11 @@ h4{
 *********************************/
 .feature-box{
     text-align: center;
+}
+
+.feature-box img{
+  height: 60px;
+  width: auto;  
 }
 
 .section-about .row:first-child{
@@ -244,11 +252,6 @@ h4{
 /************************************
     Contact Section
 *************************************/
-.form-row{
-    border: 1px solid red;
-    display: flex;
-    justify-content: flex-end;
-}
 
  input[type=text]{
     width: 75%;
@@ -314,4 +317,34 @@ input[type=text]{
     font-size: 1.1rem;
 }
 
+/************************
+    Footer Styles
+*************************/
+footer{
+    background-color: #424C55;
+    height: 4rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+footer .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.copyright{
+    margin-top: 10px;
+}
+
+.footer-links{
+    display: flex;
+    margin-top: 5px;
+}
+
+.footer-links p{
+    padding-left: 15px;
+    font-size: 0.7rem;
+}
 
